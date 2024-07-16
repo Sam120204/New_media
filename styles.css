@@ -7,16 +7,30 @@ body {
 }
 
 header {
-    background: #50b3a2;
+    background: linear-gradient(135deg, #50b3a2 30%, #2c7873 90%);
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+header .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header .hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 nav {
     background: #333;
     color: white;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -24,22 +38,27 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 1rem;
     display: block;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
 }
 
 nav ul li a:hover {
     background: #575757;
+    color: #50b3a2;
 }
 
 main {
@@ -89,4 +108,75 @@ footer ul li a {
 
 footer ul li a:hover {
     text-decoration: underline;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin: 1rem 0;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-button {
+    background: #50b3a2;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.accordion-button:hover {
+    background: #2c7873;
+}
+
+.accordion-content {
+    padding: 1rem;
+    display: none;
+    background: #f4f4f4;
+    border-left: 3px solid #50b3a2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    header .hero p {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-top: 1rem;
+    }
 }

@@ -5,55 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Health: Importance and Impact on Teenagers</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Mental Health: Importance and Impact on Teenagers</h1>
+        <div class="hero">
+            <h1>Mental Health: Importance and Impact on Teenagers</h1>
+            <p>"Your mental health is a priority. Your happiness is essential. Your self-care is a necessity."</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#overview">Overview of Mental Health</a></li>
+                <li><a href="#teenagers">Mental Health and Teenagers</a></li>
+                <li><a href="#socialmedia">Impact of Social Media</a></li>
+                <li><a href="#stigma">Stigma and Awareness</a></li>
+                <li><a href="#support">Support Systems</a></li>
+                <li><a href="#digitalage">Mental Health in the Digital Age</a></li>
+                <li><a href="#stories">Personal Stories and Case Studies</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#overview">Overview of Mental Health</a></li>
-            <li><a href="#teenagers">Mental Health and Teenagers</a></li>
-            <li><a href="#socialmedia">Impact of Social Media</a></li>
-            <li><a href="#stigma">Stigma and Awareness</a></li>
-            <li><a href="#support">Support Systems</a></li>
-            <li><a href="#digitalage">Mental Health in the Digital Age</a></li>
-            <li><a href="#stories">Personal Stories and Case Studies</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-    </nav>
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
-            <img src="images/mental_health_intro.jpg" alt="Mental Health Introduction">
+            <img src="images/mental_health_intro.jpg" alt="Illustration of mental health concepts">
             <p>It is the root of all healthy living since it incorporates our emotional, psychological, and social spheres of activity. It affects how we think, feel, and behave, therefore having impacts that stretch into every corner of our lives, from work to relations. Good mental health allows one to cope with stress, make important decisions, and contribute to the community. As much as that may be so, millions across the world suffer from mental disorders such as anxiety disorder, major depression, and bipolar disorder. The content elaborates on discrete mental health challenges that affect teenagers, the two-edged role of social media, the need to reduce stigma, and how vital support systems are for those in need. As a teenager, I remember feeling overwhelmed by academic pressures and social expectations. One of my friends struggled silently with anxiety, afraid to seek help due to the stigma surrounding mental health. This experience highlighted for me the critical importance of addressing mental health issues early and openly.</p>
         </section>
         <section id="overview">
             <h2>Overview of Mental Health</h2>
-            <img src="images/mental_health_overview.jpg" alt="Overview of Mental Health">
+            <img src="images/mental_health_overview.jpg" alt="Statistics on mental health prevalence">
             <h3>Definition and Common Conditions</h3>
             <p>The definition of health was the basis for the definition of mental health, which is described as a state of well-being where every person realizes their abilities, copes with the normal stresses of life, works productively, and contributes to their community. It is not necessarily an absence of mental disorders but rather complete physical, mental, and social well-being. Some common mental health conditions include anxiety disorders, depression, bipolar disorder, and schizophrenia. These types of disorders can cause severe distress and impact daily functioning and are, therefore, pervasive in effects on personal and professional life.</p>
-            <p>According to the World Health Organization, the state allows human beings to cope with life's various stresses, realize their abilities, learn well and work well, and hence contribute to their communities. Mental health conditions range from very mild to very severe and may affect any person regardless of age, sex, and socioeconomic status. It is estimated that around 2019, approximately 970 million people are living in the world with different mental disorders. Anxiety and depression disorders are very common (World Health Organization, 2023).</p>
+            <p>According to the <a href="https://www.who.int/health-topics/mental-health#tab=tab_1">World Health Organization</a>, the state allows human beings to cope with life's various stresses, realize their abilities, learn well and work well, and hence contribute to their communities. Mental health conditions range from very mild to very severe and may affect any person regardless of age, sex, and socioeconomic status. It is estimated that around 2019, approximately 970 million people are living in the world with different mental disorders. Anxiety and depression disorders are very common (World Health Organization, 2023).</p>
+            <canvas id="mentalHealthChart" width="400" height="200"></canvas>
         </section>
         <section id="teenagers">
             <h2>Mental Health and Teenagers</h2>
             <img src="images/teenagers.jpg" alt="Teenagers">
             <h3>Challenges Faced by Teenagers</h3>
             <p>Developmental changes, peer pressures, and academic stressors come with adolescence, which distinctly affects the mental health of teenagers. In this case, social media is an increasingly relevant context for teenagers. While it offers support, it also introduces a host of new challenges. Issues like cyberbullying, unrealistic body image ideals, and social comparison are highly harmful to the mental health of teenagers and increase the potential for anxiety, depression, and low self-esteem.</p>
-            <p>It is estimated that over 1 in 5 youth aged 13-18 years either currently or at some point during their life had a seriously debilitating mental illness according to the reports of the Centers for Disease Control and Prevention (CDC). Some of the contributing factors include adverse childhood experiences, trauma, chronic medical conditions, and loneliness or isolation. How this will be demonstrated is going to vary among teenagers, thus giving rise to different mental health issues (‌CDC, 2023).</p>
+            <p>It is estimated that over 1 in 5 youth aged 13-18 years either currently or at some point during their life had a seriously debilitating mental illness according to the reports of the <a href="https://www.cdc.gov/mentalhealth/learn/index.htm">Centers for Disease Control and Prevention (CDC)</a>. Some of the contributing factors include adverse childhood experiences, trauma, chronic medical conditions, and loneliness or isolation. How this will be demonstrated is going to vary among teenagers, thus giving rise to different mental health issues (CDC, 2023).</p>
         </section>
         <section id="socialmedia">
             <h2>Impact of Social Media</h2>
             <img src="images/social_media.jpg" alt="Impact of Social Media">
-            <p>Social media can proffer support and community, but it also contributes to mental health issues. Cyberbullying has become a severe problem that has wrappingly caused severe emotional stress to so many people. What's more, there are highly unrealistic body images and lifestyles on social media platforms that can turn teenage minds into negatively perceiving and developing low self-esteem. The constant comparison with peers and the pressure to maintain a perfect online image may contribute to anxiety and depression (‌CDC, 2023).</p>
+            <p>Social media can proffer support and community, but it also contributes to mental health issues. Cyberbullying has become a severe problem that has wrappingly caused severe emotional stress to so many people. What's more, there are highly unrealistic body images and lifestyles on social media platforms that can turn teenage minds into negatively perceiving and developing low self-esteem. The constant comparison with peers and the pressure to maintain a perfect online image may contribute to anxiety and depression (CDC, 2023).</p>
         </section>
         <section id="stigma">
             <h2>Stigma and Awareness</h2>
             <img src="images/stigma.jpg" alt="Stigma and Awareness">
             <h3>Effects of Stigma</h3>
             <p>Stigma towards mental health problems can act as a barrier to help-seeking and causes discrimination and social isolation. Stigmatization can be reduced with education and awareness raising, in combination with open discussion of mental health. World Mental Health Day and national campaigns like "Time to Change" raise awareness and promote understanding and acceptance to help break down some of the barriers to treatment and support.</p>
-            <p>According to the WHO, those living with mental health conditions are stigmatized, discriminated against, and denied basic human rights. This adds to reluctance to seek help, and therefore, no treatment for mental health problems—problems that might deteriorate in case of no treatment. By reducing stigma, we would encourage more people to get needed help for them and promote a culture of understanding and support (World Health Organization, 2023).</p>
+            <p>According to the <a href="https://www.who.int/health-topics/mental-health#tab=tab_1">WHO</a>, those living with mental health conditions are stigmatized, discriminated against, and denied basic human rights. This adds to reluctance to seek help, and therefore, no treatment for mental health problems—problems that might deteriorate in case of no treatment. By reducing stigma, we would encourage more people to get needed help for them and promote a culture of understanding and support (World Health Organization, 2023).</p>
         </section>
         <section id="campaigns">
             <img src="images/campaigns.jpg" alt="Campaigns and Initiatives">
@@ -65,11 +72,11 @@
             <img src="images/support.jpg" alt="Support Systems">
             <h3>Importance of Support</h3>
             <p>Families, friends, and the community are essential in supporting individuals with mental health issues. Positive relationships provide support emotionally and reduce feelings of loneliness, which impact therapy success. There are several places where help can be derived for mental health-related issues; these include helplines, counseling, and online support groups. For more complex networks in terms of support and educational services, there are NAMI and Mental Health America organizations.</p>
-            <p>The CDC refers to support systems as one-way mental health conditions are managed. A corporation-ID theatrical smidgen within family and/or friends can go a long way in recovery and recent well-being (‌CDC, 2023). Support groups within community organizations and online forums provide a sense of belonging and understanding that might be especially vital to those living with mental health issues.</p>
+            <p>The <a href="https://www.cdc.gov/mentalhealth/learn/index.htm">CDC</a> refers to support systems as one-way mental health conditions are managed. A corporation-ID theatrical smidgen within family and/or friends can go a long way in recovery and recent well-being (CDC, 2023). Support groups within community organizations and online forums provide a sense of belonging and understanding that might be especially vital to those living with mental health issues.</p>
         </section>
         <section id="resources">
             <h3>Resources Available</h3>
-            <p>There are loads of mental health resources: major hotlines, like the National Suicide Prevention Lifeline, in place to help support people in crisis; counseling services that provide professional support and guidance on how to manage mental health conditions; online communities and support groups that can help provide peer support and a feeling of belonging; and organizations like NAMI and Mental Health America that provide educational resources, advocacy, and assistance to people and families with a mental health condition (‌CDC, 2023).</p>
+            <p>There are loads of mental health resources: major hotlines, like the National Suicide Prevention Lifeline, in place to help support people in crisis; counseling services that provide professional support and guidance on how to manage mental health conditions; online communities and support groups that can help provide peer support and a feeling of belonging; and organizations like NAMI and Mental Health America that provide educational resources, advocacy, and assistance to people and families with a mental health condition (CDC, 2023).</p>
         </section>
         <section id="digitalage">
             <h2>Mental Health in the Digital Age</h2>
@@ -80,7 +87,7 @@
         </section>
         <section id="apps">
             <h3>Supportive Apps and Websites</h3>
-            <p>There are many apps and websites designed to support mental health. Apps like Headspace and Calm offer guided meditation and mindfulness exercises that can help reduce stress and anxiety. Websites like MentalHealth.gov provide valuable information and resources on various mental health conditions and treatments. These digital tools can be valuable additions to traditional mental health support systems (‌SAMHSA, 2023).</p>
+            <p>There are many apps and websites designed to support mental health. Apps like Headspace and Calm offer guided meditation and mindfulness exercises that can help reduce stress and anxiety. Websites like MentalHealth.gov provide valuable information and resources on various mental health conditions and treatments. These digital tools can be valuable additions to traditional mental health support systems (<a href="https://www.samhsa.gov/mental-health">SAMHSA</a>, 2023).</p>
         </section>
         <section id="stories">
             <h2>Personal Stories and Case Studies</h2>
@@ -88,6 +95,29 @@
             <h3>Real-Life Examples</h3>
             <p>Personal stories raise awareness and fight stigma. Real-life examples of people who have gone through mental health challenges show how individuals can get out of hard times: the hope and encouragement offered to others by the depiction of the importance of support, both in and out of the crisis, and potential recovery. Such stories can help humanize mental illness issues and encourage others to seek help from support.</p>
             <p>Consider the story of John, a high school student who faced severe depression due to bullying. With the help of a supportive school counselor and a mental health awareness program, John was able to seek treatment and eventually became an advocate for mental health in his community. His story demonstrates the power of support systems and the positive impact of mental health initiatives.</p>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">What is mental health?</button>
+                    <div class="accordion-content">
+                        <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">How can I improve my mental health?</button>
+                    <div class="accordion-content">
+                        <p>Improving mental health involves regular exercise, healthy eating, sufficient sleep, and seeking professional help when needed.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Where can I find support?</button>
+                    <div class="accordion-content">
+                        <p>Support can be found through mental health professionals, online support groups, and community resources.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="conclusion">
             <h2>Conclusion</h2>
@@ -101,6 +131,72 @@
             <li><a href="https://www.samhsa.gov/mental-health">SAMHSA. “What Is Mental Health?” Substance Abuse and Mental Health Services Administration, 24 Apr. 2023</a></li>
             <li><a href="https://www.who.int/health-topics/mental-health#tab=tab_1">World Health Organization. “Mental Health.” World Health Organization, 2023</a></li>
         </ul>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        $('nav a').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        // Accordion functionality
+        const acc = document.getElementsByClassName("accordion-button");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        // Interactive Chart for Mental Health Statistics
+        const ctx = document.getElementById('mentalHealthChart').getContext('2d');
+        const mentalHealthChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Anxiety', 'Depression', 'Bipolar', 'Schizophrenia'],
+                datasets: [{
+                    label: 'Number of Cases (in millions)',
+                    data: [264, 322, 46, 20],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
