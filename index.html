@@ -24,8 +24,10 @@
                 <li><a href="#support">Support Systems</a></li>
                 <li><a href="#digitalage">Mental Health in the Digital Age</a></li>
                 <li><a href="#stories">Personal Stories and Case Studies</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#videos">Videos</a></li>
             </ul>
         </nav>
     </header>
@@ -123,6 +125,43 @@
             <h2>Conclusion</h2>
             <p>Mental health is a critical aspect of overall well-being, affecting every stage of life. Teenagers, in particular, may face unique challenges that require targeted support and intervention. Huge trajectories of possible improvement exist in decreasing stigma through awareness and education on mental illness, support systems, and digital tools—a few areas that need to move up a level of wellness toward mental health. People can create a supportive and understanding environment for everyone by sharing their personal stories and positive mental health practices.</p>
         </section>
+        <section id="testimonials">
+            <h2>Testimonials and Quotes</h2>
+            <div class="testimonial">
+                <p>"Seeking help was the best decision I ever made. My life has completely changed for the better."</p>
+                <span>- Alex R.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The support I received was incredible. I now have the tools to manage my anxiety effectively."</p>
+                <span>- Jamie K.</span>
+            </div>
+        </section>
+        <section id="quiz">
+            <h2>Mental Health Quiz</h2>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p>Question 1: How often do you feel overwhelmed?</p>
+                    <input type="radio" name="q1" value="Often"> Often<br>
+                    <input type="radio" name="q1" value="Sometimes"> Sometimes<br>
+                    <input type="radio" name="q1" value="Rarely"> Rarely<br>
+                </div>
+                <div class="quiz-question">
+                    <p>Question 2: Do you find it difficult to sleep?</p>
+                    <input type="radio" name="q2" value="Yes"> Yes<br>
+                    <input type="radio" name="q2" value="No"> No<br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="quizResult"></div>
+        </section>
+        <section id="videos">
+            <h2>Video Gallery - TED TALK</h2>
+            <div class="video">
+                <p>Thomas Insel: Toward a new understanding of mental illness</p>
+                <iframe src="https://www.youtube.com/embed/PeZ-U0pj9LI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>          
+        
     </main>
     <footer>
         <h3>Citations</h3>
@@ -198,6 +237,51 @@
                 }
             }
         });
+
+    </script>
+    <script>
+        // Quiz functionality
+        $('#quizForm').on('submit', function(event) {
+            event.preventDefault();
+            let score = 0;
+            const answers = {
+                q1: 'Rarely',
+                q2: 'No'
+            };
+            const formData = $(this).serializeArray();
+            formData.forEach(item => {
+                if (item.value === answers[item.name]) {
+                    score++;
+                }
+            });
+            $('#quizResult').text('You scored ' + score + ' out of 2');
+        });
+
+        // Contact Form functionality
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            $(this).trigger('reset');
+        });
+
+        // Newsletter Subscription functionality
+        $('#newsletterForm').on('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for subscribing to our newsletter!');
+            $(this).trigger('reset');
+        });
+
+        // PWA Service Worker registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
     </script>
 </body>
 </html>
