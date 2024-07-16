@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 header {
     background: linear-gradient(135deg, #50b3a2 30%, #2c7873 90%);
     color: white;
-    padding: 4rem 0;  /* Increased padding for better spacing */
+    padding: 4rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1.5rem;
@@ -22,24 +22,24 @@ header .hero {
 }
 
 header .hero h1 {
-    font-size: 3rem;  /* Increased font size for the title */
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 header .hero p {
-    font-size: 1.5rem;  /* Increased font size for the subtitle */
+    font-size: 1.5rem;
     margin-top: 1rem;
     font-style: italic;
 }
 
 nav {
-    background: #2c3e50;  /* Changed color to a darker shade */
+    background: #2c3e50;
     color: white;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid #50b3a2;  /* Added border-top for a sleek look */
-    border-bottom: 3px solid #50b3a2;  /* Added border-bottom for a sleek look */
+    border-top: 3px solid #50b3a2;
+    border-bottom: 3px solid #50b3a2;
 }
 
 nav ul {
@@ -64,6 +64,7 @@ nav ul li a {
     transition: background 0.3s ease, color 0.3s ease;
     font-size: 1rem;
     border-radius: 4px;
+    white-space: nowrap;
 }
 
 nav ul li a:hover {
@@ -73,7 +74,7 @@ nav ul li a:hover {
 
 main {
     padding: 1rem;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -349,26 +350,101 @@ footer .social-media img {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     nav ul {
-        flex-direction: column;
-        text-align: center;
+        justify-content: space-around;
     }
     
     nav ul li {
-        margin: 0.5rem 0;
-    }
-    
-    nav ul li a {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
+        flex: 1 1 auto;
+        text-align: center
 
-    header .hero p {
-        font-size: 1rem;
-    }
 
-    main {
-        margin-top: 1rem;
-    }
+continue pls    ;
+}
+}
+
+@media (max-width: 992px) {
+header .hero h1 {
+    font-size: 2.5rem;
+}
+
+header .hero p {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+}
+}
+
+@media (max-width: 768px) {
+header {
+    padding: 2rem 0;
+}
+
+header .hero h1 {
+    font-size: 2rem;
+}
+
+header .hero p {
+    font-size: 1rem;
+}
+
+main {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+#quizForm button {
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (max-width: 576px) {
+header .hero h1 {
+    font-size: 1.5rem;
+}
+
+header .hero p {
+    font-size: 0.9rem;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+nav ul li a {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+main {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#testimonials, #quiz, #videos, #events, #contact, #newsletter, #blog {
+    padding: 1rem;
+}
 }
