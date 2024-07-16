@@ -175,7 +175,7 @@ nav ul li a:hover {
 /* Main Content */
 main {
     padding: 2rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 2rem auto;
     background: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -213,8 +213,13 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #50b3a2;
 }
 
 footer ul {
@@ -223,11 +228,26 @@ footer ul {
     margin: 0;
 }
 
-footer ul li {
-    margin: 0.5rem 0;
+footer ul.citations {
+    text-align: left;
+    display: inline-block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 0;
 }
 
-footer ul li a:hover {
+footer ul.citations li {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+footer ul.citations li a {
+    color: #50b3a2;
+    text-decoration: none;
+}
+
+footer ul.citations li a:hover {
     text-decoration: underline;
 }
 
