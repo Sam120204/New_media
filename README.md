@@ -1,17 +1,7 @@
 # Mental Health: Importance and Impact on Teenagers
 
-This project is a comprehensive web page focused on the importance of mental health and its impact on teenagers. The content covers various aspects such as mental health challenges faced by teenagers, the impact of social media, the stigma associated with mental health issues, support systems, and personal stories. The web page aims to raise awareness, provide valuable information, and offer support to those dealing with mental health issues.
+This project is a comprehensive web page focused on the importance of mental health and its impact on teenagers (Project of ENGL108D). The content covers various aspects such as mental health challenges faced by teenagers, the impact of social media, the stigma associated with mental health issues, support systems, and personal stories. The web page aims to raise awareness, provide valuable information, and offer support to those dealing with mental health issues.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -36,19 +26,6 @@ Mental health is a crucial aspect of overall well-being, affecting how we think,
 - jQuery
 - Chart.js
 
-## Setup and Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/mental-health-awareness.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd mental-health-awareness
-   ```
-
-3. Open the `index.html` file in your preferred web browser.
 
 ## Usage
 
