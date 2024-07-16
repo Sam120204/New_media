@@ -1,17 +1,114 @@
+/* Define global font settings */
+body, p, h1, h2, h3, h4, h5, h6, blockquote, input, button, nav a {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Adjust specific text styles */
+header .hero h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+header .hero p, section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Ensure consistent button and input styling */
+input, button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+/* Accordion button adjustments */
+.accordion-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #007991, #78ffd6);
+    color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+    nav ul li a {
+        font-family: 'Arial', sans-serif;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .hero h1 {
+        font-size: 2rem;
+    }
+
+    header .hero p, section p {
+        font-size: 1rem;
+    }
+}
+
+/* Specific Section Adjustments */
+section h2, section h3 {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #007991, #78ffd6);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#introduction em {
+    font-family: 'Georgia', serif;
+    background: #e0f7fa;
+    border-left: 5px solid #50b3a2;
+}
+
+#overview, #teenagers, #socialmedia, #stigma, #campaigns, #support, #resources, #digitalage, #apps, #stories, #faq, #conclusion, #testimonials, #quiz, #videos {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    color: #333;
 }
 
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #50b3a2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
 header {
     background: linear-gradient(135deg, #50b3a2 30%, #2c7873 90%);
     color: white;
     padding: 4rem 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #50b3a2;
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
@@ -22,9 +119,10 @@ header .hero {
 }
 
 header .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 header .hero p {
@@ -33,6 +131,7 @@ header .hero p {
     font-style: italic;
 }
 
+/* Navigation */
 nav {
     background: #2c3e50;
     color: white;
@@ -70,39 +169,52 @@ nav ul li a {
 nav ul li a:hover {
     background: #50b3a2;
     color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Main Content */
 main {
-    padding: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 2rem;
-    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-    color: #333;
+/* Section Headers */
+section h2, section h3 {
+    background: linear-gradient(135deg, #50b3a2, #2c7873);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
+/* Images */
 section img {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
 footer ul {
@@ -113,11 +225,6 @@ footer ul {
 
 footer ul li {
     margin: 0.5rem 0;
-}
-
-footer ul li a {
-    color: #50b3a2;
-    text-decoration: none;
 }
 
 footer ul li a:hover {
@@ -230,7 +337,7 @@ footer .social-media img {
 }
 
 .video p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #333;
@@ -239,12 +346,14 @@ footer .social-media img {
 .video iframe {
     width: 100%;
     height: 400px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Accordion Styles */
 /* Accordion Styles */
 .accordion {
     margin: 1rem 0;
@@ -252,31 +361,66 @@ footer .social-media img {
 
 .accordion-item {
     margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-button {
-    background: #50b3a2;
-    color: white;
+    background: #f4f4f4;
+    color: #333;
     border: none;
     padding: 1rem;
     width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
     transition: background 0.3s ease;
-    border-radius: 4px;
+    border-radius: 5px 5px 0 0;
 }
 
 .accordion-button:hover {
-    background: #2c7873;
+    background: #e0e0e0;
 }
 
 .accordion-content {
     padding: 1rem;
     display: none;
-    background: #f4f4f4;
-    border-left: 3px solid #50b3a2;
-    border-radius: 0 4px 4px 4px;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-button:after {
+    content: '\002B';
+    float: right;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: #777;
+}
+
+.accordion-button.active:after {
+    content: '\2212';
+}
+
+
+/* Highlighted Quotes */
+.highlight {
+    background: #f9f9f9;
+    border-left: 5px solid #50b3a2;
+    margin: 2rem 0;
+    padding: 1rem;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.highlight blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
 }
 
 /* Other sections */
@@ -357,94 +501,130 @@ footer .social-media img {
     
     nav ul li {
         flex: 1 1 auto;
-        text-align: center
-
-
-continue pls    ;
-}
-}
-
-@media (max-width: 992px) {
-header .hero h1 {
-    font-size: 2.5rem;
-}
-
-header .hero p {
-    font-size: 1.2rem;
-}
-
-nav ul {
-    flex-direction: column;
-}
-
-nav ul li {
-    margin: 0.5rem 0;
-}
-
-nav ul li a {
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
-}
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
-header {
-    padding: 2rem 0;
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    header .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    header .hero p {
+        font-size: 1.2rem;
+    }
+
+    main {
+        margin-top: 1rem;
+        padding: 1.5rem;
+    }
 }
 
-header .hero h1 {
-    font-size: 2rem;
+/* Introduction Section */
+#introduction {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-header .hero p {
-    font-size: 1rem;
+#introduction p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-main {
+#introduction em {
+    display: block;
+    background: #e0f7fa;
+    padding: 1rem;
+    border-left: 5px solid #50b3a2;
     margin-top: 1rem;
-    padding: 1rem;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    border-radius: 5px;
 }
 
-nav ul li a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.85rem;
+/* Overview Section */
+#overview {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-#quizForm button {
-    width: 100%;
-    text-align: center;
-}
-}
-
-@media (max-width: 576px) {
-header .hero h1 {
+#overview h3 {
+    color: #2c3e50;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-header .hero p {
-    font-size: 0.9rem;
+#overview img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
 }
 
-nav ul {
-    flex-direction: column;
+/* Teenagers Section */
+#teenagers {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-nav ul li {
-    width: 100%;
-    margin: 0.25rem 0;
+#teenagers p {
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-nav ul li a {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+#teenagers strong {
+    background: #fff3e0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
-main {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+/* Social Media Section */
+#socialmedia {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-#testimonials, #quiz, #videos, #events, #contact, #newsletter, #blog {
+#socialmedia .highlight {
+    background: #fff3e0;
     padding: 1rem;
+    border-left: 5px solid #50b3a2;
+    margin: 2rem 0;
+    border-radius: 5px;
 }
+
+#socialmedia .highlight blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #333;
 }
